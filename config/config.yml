@@ -1,0 +1,7 @@
+data:
+  size: 151
+  train_partion: 0.8
+  data_root: .\\data
+
+train:
+  train_partion: 0.8
