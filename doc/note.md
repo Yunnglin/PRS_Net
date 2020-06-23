@@ -50,6 +50,23 @@ i^2=j^2=k^2=-1\\
 ij=k、ji=-k、jk=i、kj=-i、ki=j、ik=-j
 $$
 
+### Loss
+
+- Symmetry Distance Loss
+  
+  $$
+  L_{sd} = \displaystyle\sum_{i=k}^ND_k
+  $$
+- Regularization Loss
+  $$
+  L_r = \displaystyle\sum_{i=1}^3\sum_{j=1}^3
+  (A_{ij}^2 + B_{ij}^2)
+  $$
+- Overall Loss Funtion
+  $$
+  L = L_{sd}+\omega_rL_r
+  $$
+
 Reference：
 
 1. [pytorch入门](https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html#sphx-glr-beginner-blitz-tensor-tutorial-py)
