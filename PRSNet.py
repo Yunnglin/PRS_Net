@@ -38,14 +38,6 @@ class PRSNet(nn.Module):
         )
 
         # Fully connected layers of symmetry planes and rotation quternion
-        self.FCLayers = nn.Sequential(
-            nn.Linear(64, 32),
-            self.LeakyReLU,
-            nn.Linear(32, 16),
-            self.LeakyReLU,
-            nn.Linear(16, 4),
-            self.LeakyReLU
-        )
         
         self.FCLayerSP11 = nn.Sequential(nn.Linear(64, 32), self.LeakyReLU)
         self.FCLayerSP21 = nn.Sequential(nn.Linear(64, 32), self.LeakyReLU)
