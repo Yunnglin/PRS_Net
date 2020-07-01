@@ -187,8 +187,6 @@ class LossRegularization(object):
             # print('B', B)
             self.loss[i] = torch.sum(A**2) + torch.sum(B**2)
 
-            # print('loss', i, self.loss[i])
-        # print('loss', self.loss)
         return self.loss
 
 

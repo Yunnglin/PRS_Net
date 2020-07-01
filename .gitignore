@@ -10,6 +10,8 @@ results/
 
 *.zip
 
+data/
+
 ShapeNetCore/
 
 .vscode/
