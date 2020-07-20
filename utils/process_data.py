@@ -5,7 +5,7 @@ import nrrd
 import random
 import os
 
-data_root = 'D:\\My\\MyCode\\PRSPaper\\PRSNet\\data\\'
+data_root = 'D:\\My\\MyCode\\PRSPaper\\PRSNet\\data\\skateboard'
 start_file = 42
 file_count = 151  # 151
 view = False

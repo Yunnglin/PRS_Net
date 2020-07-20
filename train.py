@@ -11,7 +11,7 @@ w_r = 100
 
 
 def train():
-    train_set = PRSDataset('.\\data', True)
+    train_set = PRSDataset('.\\data\\skateboard', True)
     train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
 
     PRS_Net = PN.PRSNet()
